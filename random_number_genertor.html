@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="">
+        
+        
+    </head>
+
+    <body>
+        <script>
+            let randomNumberGenerator = function(start, range) {
+                let randomNumber = Math.floor((Math.random() * range) + start );
+
+                while(randomNumber > start) {
+                    randomNumber = Math.floor((Math.random() * range) + start );
+                }
+
+                return randomNumber;
+            }
+
+            randomNumberGenerator(50, 100);
+            
+
+        </script>
+
+    </body>
+
+    
+
+</html>
